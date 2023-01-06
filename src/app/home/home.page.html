@@ -1,0 +1,70 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      SkeletonAPP
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+  <h1 class="titulo">Bienvenido</h1>
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>usuario : {{ nombrezzz }}</ion-card-subtitle>
+    </ion-card-header>
+
+
+    <ion-card-content>
+      <h1>Información Adicional</h1>
+
+      <ion-list>
+        <ion-item>
+          <ion-label>Nombre :</ion-label>
+          <ion-input type="text" placeholder="Ingrese Nombre" [(ngModel)]="alertando"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Apellidos :</ion-label>
+          <ion-input type="text" placeholder="Ingrese Apellido" [(ngModel)]="apellido"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Nivel educación</ion-label>
+          <ion-select placeholder="Seleccione nivel">
+            <ion-select-option value="Basica">Basica</ion-select-option>
+            <ion-select-option value="Media">Media</ion-select-option>
+            <ion-select-option value="Superior">Superior</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Fecha nacimiento</ion-label>
+          <ion-input type="date" name="fecha"></ion-input>
+        </ion-item>
+
+
+        <ion-item>
+          <ion-button>
+            Limpiar
+          </ion-button>
+
+          <ion-button
+          (click)="mostrar()"
+          slot="end"
+          >
+            Mostrar
+          </ion-button>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+
+
+  </ion-card>
+
+  <ion-footer>
+    <ion-toolbar>
+      <ion-title>APP desarrollada por : Iván Carreño</ion-title>
+    </ion-toolbar>
+  </ion-footer>
+
+
+</ion-content>
